@@ -12,3 +12,40 @@ Android and/or iOS.
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Example
+
+  ## Circular progress usage
+
+  PDialogEE dialog = PDialogEE(
+    bgColor: Colors.pink,
+    //on back button click
+    cancelable: false,
+    indicatorColor: Colors.lightBlue,
+  );
+  
+  showPDialog(context: context, pDialogEE: dialog);
+  
+  ## Horizontal progress usage
+
+  PDialogEE dialog = PDialogEE(
+    bgColor: Colors.pink,
+    //on back button click
+    cancelable: false,
+    design: LoadingProgressDesign.Horizontal,
+    indicatorColor: Colors.lightBlue,
+  );
+  
+  showPDialog(context: context, pDialogEE: dialog);
+  
+   ## Progress update
+   
+   dialog.setDialogProgress(_start);
+   
+   ## Progress dismiss
+   
+   if (dialog.isShowing()) {
+     dialog.onDismiss();
+   }
+
+
