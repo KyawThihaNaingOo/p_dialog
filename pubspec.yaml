@@ -2,7 +2,7 @@ name: p_dialog
 description: This plugin is free to use
 version: 0.0.1
 author: KyawThihaNaingOo
-homepage:
+homepage: https://github.com/KyawThihaNaingOo/p_dialog
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
