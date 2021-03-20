@@ -16,7 +16,7 @@ samples, guidance on mobile development, and a full API reference.
 ## Example
 
   ## Circular progress usage
-
+```
   PDialogEE dialog = PDialogEE(
     bgColor: Colors.pink,
     //on back button click
@@ -25,9 +25,9 @@ samples, guidance on mobile development, and a full API reference.
   );
   
   showPDialog(context: context, pDialogEE: dialog);
-  
+```
   ## Horizontal progress usage
-
+```
   PDialogEE dialog = PDialogEE(
     bgColor: Colors.pink,
     //on back button click
@@ -37,15 +37,16 @@ samples, guidance on mobile development, and a full API reference.
   );
   
   showPDialog(context: context, pDialogEE: dialog);
+  ```
   
    ## Progress update
-   
+```   
    dialog.setDialogProgress(_start);
-   
+```   
    ## Progress dismiss
-   
+ ```  
    if (dialog.isShowing()) {
      dialog.onDismiss();
    }
-
+```
 
