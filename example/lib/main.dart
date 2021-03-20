@@ -35,8 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
   double _start = 0.0;
 
   PDialogEE dialog = PDialogEE(
-    design: LoadingProgressDesign.Horizontal,
-    progress: 0,
+    bgColor: Colors.pink,
+    indicatorColor: Colors.lightBlue,
   );
 
   @override

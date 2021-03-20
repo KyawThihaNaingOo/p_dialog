@@ -125,7 +125,9 @@ class _PDialogEEState extends State<PDialogEE> {
   Widget _circularWidget() {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: CircularProgressIndicator(),
+      child: CircularProgressIndicator(
+          backgroundColor: widget.bgColor,
+          valueColor: new AlwaysStoppedAnimation<Color>(widget.indicatorColor)),
     );
   }
 
